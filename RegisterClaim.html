@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--This is screen 1 based on registering for a new claim-->
+<html>
+    <head>
+        <title>Register Claim</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Register a new claim</h1>
+            <h2>To start a new claim</h2>
+            <ul>
+                <li>Please complete the following fields marked with an *</li>
+                <li>Only complete the fields neccesary to your claim e.g. if claim is for property, expand and complete the property section</li>
+                <li>Select "Register Claims" to complete</li>
+            </ul>
+            <h2>Customer Information</h2>
+            0
+            <p>
+                <label for="insuranceType">Insurance Type *</label>
+                <select name="insuranceType" id="insuranceType">
+                <option value="PleaseSelect" disabled selected>Please Select</option>
+                <option value="Property">Property</option>
+                <option value="Motor">Motor</option>
+                <option value="Pet">Pet</option>
+                </select>
+            </p>
+            <p>
+                <label for="name">Customer Name *</label>
+                <input type="text" name="name" id="name" placeholder="e.g.John Smith">
+            </p>
+            <p>
+                <label for="claimDate">Claim Start Date *</label>
+                <input type="date" name="claimDate" id="claimDate">
+            </p>
+            <p>
+                <label for="estimatedAmount">Estimated Amount of Claim *</label>
+                <input type="text" name="estimatedAmount" id="estimatedAmount" placeholder="e.g.$250">
+            </p>
+            <p>
+                <label for="claimReason">Reason for Claim *</label>
+                <input type="text" name="claimReason" id="claimReason" placeholder="Brief explanation">
+            </p>
+            <p>
+                <label for="incidentDescription">Description of Incident *</label>
+                <input type="text" name="incidentDescription" id="incidentDescription" placeholder="More Details">
+            </p>
+            <p>
+                <h3>>Property Insurance Claims Only</h3>
+                <label for="propInsuranceClaim">Address of Property Affected</label>
+                <input type="text" name="propInsuranceClaim" id="propInsuranceClaim" placeholder="e.g. 123 Main Street">
+            </p>
+            <p>
+                <h3>>Motor Insurance Claims Only</h3>
+                <label for="makeOfVehicle">Make of Vehicle</label>
+                <input type="text" name="makeOfVehicle" id="makeOfVehicle" placeholder="e.g. Ford">
+            </p>
+            <p>
+                <label for="modelOfVehicle">Model of Vehicle</label>
+                <input type="text" name="modelOfVehicle" id="modelOfVehicle" placeholder="e.g. Fiesta">
+            </p>
+            <p>
+                <label for="manufactureYear">Year of Manufacture</label>
+                <input type="text" name="manufactureYear" id="manufactureYear" placeholder="e.g. 2020">
+            </p>
+            <p>
+                <h3>>Pet Insurance Claims Only</h3>
+                <label for="typeOfAnimal">Type of Animal</label>
+                <input type="text" name="typeOfAnimal" id="typeOfAnimal" placeholder="e.g. Dog or Cat">
+            </p>
+            <p>
+                <label for="animalBreeed">Breed of Animal</label>
+                <input type="text" name="animalBreeed" id="animalBreeed" placeholder="e.g. Golden Retriever">
+            </p>
+            <p>
+                <button>Register Claim</button>
+            </p>
+        </div>
+    </body>
+</html>
